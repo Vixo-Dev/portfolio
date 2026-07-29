@@ -116,9 +116,9 @@ export function Home() {
               <motion.div
                 key={`${skill.name}-${isMobile}`}
                 whileHover={{ 
-                  scale: 1.05, 
-                  y: -5,
-                  boxShadow: `0 10px 30px -10px ${skill.color}` 
+                  scale: 1.02, 
+                  y: -3,
+                  boxShadow: `0 8px 25px -10px ${skill.color}` 
                 }}
                 transition={{ 
                   type: "spring",
@@ -160,11 +160,6 @@ export function Home() {
           ))}
         </div>
         <div>
-          <a href="/cv.pdf" target="_blank">
-            <Button variant="navCta" size="lg" className="hidden md:inline-flex px-6">
-              Descargar CV
-            </Button>
-          </a>
         </div>
       </nav>
 
@@ -356,9 +351,9 @@ export function Home() {
                       whileInView={{ opacity: 1, scale: 1, y: 0 }}
                       viewport={{ once: isMobile }}
                       whileHover={{ 
-                        scale: 1.05, 
-                        y: -5,
-                        boxShadow: `0 10px 30px -10px ${skill.color}` 
+                        scale: 1.02, 
+                        y: -3,
+                        boxShadow: `0 8px 25px -10px ${skill.color}` 
                       }}
                       transition={{ 
                         duration: 0.4, 
