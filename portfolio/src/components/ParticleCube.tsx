@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 export function ParticleCube() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
