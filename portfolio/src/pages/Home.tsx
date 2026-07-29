@@ -116,7 +116,7 @@ export function Home() {
               <motion.div
                 key={`${skill.name}-${isMobile}`}
                 whileHover={{ 
-                  scale: 1.1, 
+                  scale: 1.05, 
                   y: -5,
                   boxShadow: `0 10px 30px -10px ${skill.color}` 
                 }}
@@ -201,7 +201,7 @@ export function Home() {
               className="flex flex-wrap gap-4 font-bold opacity-0 animate-fade-up"
               style={{ animationDelay: "0.65s" }}
             >
-              <a href="mailto:davidvg1511@gmail.com">
+              <a href="#contacto">
                 <Button variant="hero" className="px-6 py-3 md:px-8 md:py-6 text-sm md:text-base">
                   Contactar
                 </Button>
@@ -356,7 +356,7 @@ export function Home() {
                       whileInView={{ opacity: 1, scale: 1, y: 0 }}
                       viewport={{ once: isMobile }}
                       whileHover={{ 
-                        scale: 1.1, 
+                        scale: 1.05, 
                         y: -5,
                         boxShadow: `0 10px 30px -10px ${skill.color}` 
                       }}
