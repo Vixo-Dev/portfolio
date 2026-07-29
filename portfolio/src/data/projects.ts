@@ -5,8 +5,9 @@ export interface Project {
   date: string;
   description: string;
   tech: string[];
-  imageUrl?: string;
+  imageUrl?: string | string[];
   githubUrl?: string;
+  isMobileApp?: boolean;
 }
 
 export const projects: Project[] = [
@@ -17,7 +18,8 @@ export const projects: Project[] = [
     date: "May 2026 - Jul 2026",
     description: "Sistema de gestión administrativa y asistencia. Desarrollo del backend con arquitectura en capas y seguridad mediante tokens (JWT). Construcción de la API REST e implementación del frontend.",
     tech: ["Spring Boot", "React PWA", "JWT", "Java", "REST API"],
-    githubUrl: "https://github.com/davidvg1511"
+    imageUrl: ["images/sdvrds-1.png", "images/sdvrds-2.png", "images/sdvrds-3.png"],
+    githubUrl: "https://github.com/Vixo-Dev/rock-of-salvation-visitor-system"
   },
   {
     id: "chatbot-rag",
@@ -35,7 +37,9 @@ export const projects: Project[] = [
     date: "Abr 2024 - May 2024",
     description: "App móvil de transporte. Implementación de geolocalización en tiempo real para mostrar la ubicación del usuario y las rutas disponibles mediante mapas interactivos.",
     tech: ["React Native", "Google Maps API", "Node.js"],
-    githubUrl: "https://github.com/davidvg1511"
+    imageUrl: ["images/riber-1.png", "images/riber-3.png"],
+    githubUrl: "https://github.com/davidvg1511",
+    isMobileApp: true
   },
   {
     id: "netrix",
@@ -44,7 +48,7 @@ export const projects: Project[] = [
     date: "Jun 2025 - Ago 2025",
     description: "Sistema universitario de préstamo de equipos de redes. Desarrollo de capa backend y acceso a BD. Implementación del patrón DAO, consultas SQL y operaciones CRUD.",
     tech: ["Oracle Cloud", "Java", "SQL"],
-    githubUrl: "https://github.com/davidvg1511"
+    githubUrl: "https://github.com/Vixo-vDev/Integradora_Zentix"
   },
   {
     id: "plataforma-educativa",

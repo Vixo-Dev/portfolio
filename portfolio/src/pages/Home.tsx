@@ -261,6 +261,8 @@ export function Home() {
                   description={project.description}
                   tech={project.tech}
                   imageUrl={project.imageUrl}
+                  githubUrl={project.githubUrl}
+                  isMobileApp={project.isMobileApp}
                 />
               </motion.div>
             ))}
